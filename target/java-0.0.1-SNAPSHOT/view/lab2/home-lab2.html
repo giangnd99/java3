@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - Lập Trình Java #3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lab 2 - Lập Trình Java #3</h1>
+        <p>Mục tiêu của Lab này là sử dụng chỉ thị, action trong JSP, và tích hợp JavaBean.</p>
+        <div class="button-container">
+            <a href="http://localhost:8080/java/lab2/bai1" class="btn">Bài 1: Truyền Dữ Liệu</a>
+            <a href="http://localhost:8080/java/lab2/bai2" class="btn">Bài 2: Sử Dụng jsp-include</a>
+            <a href="http://localhost:8080/java/lab2/bai3" class="btn">Bài 3: Form và EL</a>
+            <a href="http://localhost:8080/java/lab2/bai4" class="btn">Bài 4: Sử Dụng JavaBean</a>
+            <a href="http://localhost:8080/java/lab2/bai5" class="btn">Bài 5: Ứng dụng tính toán</a>
+        </div>
+    </div>
+</body>
+</html>

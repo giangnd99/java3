@@ -1,0 +1,51 @@
+/* Đặt nền cho trang */
+body {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng tiêu đề */
+h1 {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+/* Định dạng danh sách */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Định dạng các mục trong danh sách */
+li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+/* Định dạng các mục trong danh sách khi mục cuối cùng */
+li:last-child {
+    border-bottom: none;
+}
+
+/* Định dạng văn bản trong danh sách */
+li::before {
+    content: '• ';
+    color: #3498db;
+    font-weight: bold;
+}

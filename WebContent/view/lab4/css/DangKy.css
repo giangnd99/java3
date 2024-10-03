@@ -1,0 +1,96 @@
+/* Đặt nền cho trang */
+body {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng tiêu đề */
+h1 {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+/* Định dạng form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Định dạng các thẻ div bên trong form */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Định dạng các thẻ label */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Định dạng các ô input và textarea */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+/* Định dạng các ô input và textarea khi focus */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+/* Định dạng cho các input type checkbox và radio */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Định dạng textarea */
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Định dạng button */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Đổi màu button khi hover */
+button:hover {
+    background-color: #2980b9;
+}

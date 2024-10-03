@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab Exercises - Java4</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+
+            body {
+                background-color: #f0f2f5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .container {
+                width: 80%;
+                max-width: 1200px;
+                text-align: center;
+                background-color: #fff;
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+                color: #333;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .lab-item {
+                background-color: #007bff;
+                color: #fff;
+                padding: 1rem;
+                border-radius: 8px;
+                text-decoration: none;
+                font-size: 1.2rem;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+            }
+
+            .lab-item:hover {
+                transform: translateY(-10px);
+                background-color: #0056b3;
+            }
+
+            footer {
+                margin-top: 2rem;
+                font-size: 0.9rem;
+                color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Java 3 - Lab</h1>
+            <div class="grid">
+                <a href="http://localhost:8080/java/lab1" class="lab-item">Lab 1</a>
+                <a href="http://localhost:8080/java/lab2" class="lab-item">Lab 2</a>
+                <a href="http://localhost:8080/java/lab3" class="lab-item">Lab 3</a>
+                <a href="http://localhost:8080/java/lab4" class="lab-item">Lab 4</a>
+                <a href="http://localhost:8080/java/lab5" class="lab-item">Lab 5</a>
+                <a href="http://localhost:8080/java/lab6" class="lab-item">Lab 6</a>
+                <a href="http://localhost:8080/java/lab7" class="lab-item">Lab 7</a>
+                <a href="http://localhost:8080/java/lab8" class="lab-item">Lab 8</a>
+            </div>
+            <footer>&copy; 2024 Java3 Labs | FPT Polytechnic</footer>
+        </div>
+
+        <script>
+            // Adding an effect to the links when hovered
+            const labItems = document.querySelectorAll('.lab-item');
+            labItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.backgroundColor = '#0056b3';
+                });
+                item.addEventListener('mouseleave', () => {
+                    item.style.backgroundColor = '#007bff';
+                });
+            });
+        </script>
+    </body>
+</html>
